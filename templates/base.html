@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="ko">
+
+{% include 'head.html' %}       # head 파일을 가져옴
 <body>
-    Hello World!
+   {% include 'header.html' %}
+
+   {% block content %}
+
+   {% endblock %}
+
+    {% include 'header.html' %}
 </body>
 </html>
